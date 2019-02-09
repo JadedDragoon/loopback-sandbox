@@ -1,0 +1,46 @@
+{
+  "name": "Parent",
+  "plural": "Parents",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "absent": true
+    },
+    "stuff": {
+      "type": [
+        "string"
+      ],
+      "required": true,
+      "default": [
+        "foo"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "children": {
+      "type": "hasMany",
+      "model": "Child",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

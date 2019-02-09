@@ -31,5 +31,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Parent": {
+    "dataSource": "sbSql",
+    "public": true
+  },
+  "Child": {
+    "dataSource": "sbSql",
+    "public": true
   }
 }

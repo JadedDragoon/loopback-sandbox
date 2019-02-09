@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "sbSql": {
+    "host": "localhost",
+    "port": 0,
+    "url": "",
+    "database": "sandbox",
+    "password": "Mastery61!",
+    "name": "sbSql",
+    "user": "lb.sandbox",
+    "connector": "mysql"
   }
 }
